@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+body{
+   background: rgb(209, 206, 206);
+}
+
+header{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(162, 238, 213);
+    margin-bottom: 32px;
+}
+
+header h1 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+
+nav{
+    justify-items: center;
+    margin-bottom: 64px;
+}
+
+nav ul {
+    display: flex;
+    gap: 32px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: rgb(22, 128, 92);
+    transition: all 500ms ease-in-out;
+}
+
+nav ul li a:hover {
+    color: rgb(5, 53, 37);
+    text-decoration: underline;
+}
+
+main {
+   padding-inline: 5%;
+}
+
+.product-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,400px));
+    gap: 32px;
+    margin-bottom: 100px;
+    margin-inline: auto;
+    justify-content: center;
+}
+
+main h2 {
+    margin-bottom: 32px;
+}
+
+.product{
+    padding: 16px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.product h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-block: 16px;
+}
+
+.product p {
+    font-size: 16px;
+    font-weight: 400;
+    width: 80%;
+    margin-inline: auto;
+    color: gray;
+}
+
+.product .price {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 32px;
+    color: rgb(22, 128, 92);
+}
+
+footer {
+    justify-items: center;
+    background-color: rgb(3, 63, 3);
+    color: white;
+    padding-block: 32px;
+}
+
+footer p{
+    font-weight: bold;
+}
+
+@media (min-width: 640px){
+    main{
+        padding-inline: 12%;
+    }
+}
+
+@media (min-width: 768px){
+    main{
+        padding-inline: 12%;
+    }
+}
+
+@media (min-width: 1024px){
+    main{
+        padding-inline: 5%;
+    }
+}
+
+@media (min-width: 1280px){
+    main{
+        padding-inline: 16%;
+    }
+}
+
+ 
