@@ -42,12 +42,16 @@ nav ul li {
 nav ul li a {
     color: rgb(22, 128, 92);
     transition: all 500ms ease-in-out;
+    padding: 8px 16px;
 }
 
 nav ul li a:hover {
-    color: rgb(5, 53, 37);
-    text-decoration: underline;
+    
+    background-color: #b7b3b3;
+    border-radius: 20px;
+
 }
+
 
 main {
    padding-inline: 5%;
@@ -76,6 +80,7 @@ main h2 {
 
 .product img {
     width: 100%;
+    height: 500px;
     object-fit: cover;
 }
 
@@ -99,6 +104,12 @@ main h2 {
     margin-top: 32px;
     color: rgb(22, 128, 92);
 }
+
+.product-list article:nth-child(2) img{
+    height: 300px;
+}
+
+ 
 
 footer {
     justify-items: center;
